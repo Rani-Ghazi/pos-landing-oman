@@ -1,4 +1,3 @@
-
 import { MessageCircle, Shield, FileText, Percent, Printer, Package, Building2, BarChart3, Users, Gift, Smartphone, CheckCircle, ArrowRight, Star, Zap, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,87 +5,87 @@ import { Card, CardContent } from "@/components/ui/card";
 const Index = () => {
   const features = [
     {
-      icon: <Shield className="w-8 h-8 text-blue-500" />,
+      icon: <Shield className="w-8 h-8 text-green-600" />,
       title: "يعمل بدون إنترنت",
       description: "نظام موثوق يعمل حتى في حالة انقطاع الإنترنت",
-      color: "from-blue-500 to-blue-600"
+      color: "from-green-500 to-green-600"
     },
     {
-      icon: <FileText className="w-8 h-8 text-purple-500" />,
+      icon: <FileText className="w-8 h-8 text-green-600" />,
       title: "فواتير إلكترونية وورقية",
       description: "إصدار فواتير متوافقة مع معايير الضريبة العُمانية",
-      color: "from-purple-500 to-purple-600"
+      color: "from-green-500 to-green-600"
     },
     {
-      icon: <Percent className="w-8 h-8 text-green-500" />,
+      icon: <Percent className="w-8 h-8 text-green-600" />,
       title: "خصومات واسترجاع",
       description: "إدارة مرنة للخصومات والعروض والمرتجعات",
       color: "from-green-500 to-green-600"
     },
     {
-      icon: <Printer className="w-8 h-8 text-indigo-500" />,
+      icon: <Printer className="w-8 h-8 text-green-600" />,
       title: "ربط الطابعات ودرج النقود",
       description: "اتصال سلس مع جميع أنواع الطابعات وأدراج النقود",
-      color: "from-indigo-500 to-indigo-600"
+      color: "from-green-500 to-green-600"
     },
     {
-      icon: <Package className="w-8 h-8 text-teal-500" />,
+      icon: <Package className="w-8 h-8 text-green-600" />,
       title: "إدارة المخزون الذكية",
       description: "تتبع الكميات مع تنبيهات انخفاض المخزون",
-      color: "from-teal-500 to-teal-600"
+      color: "from-green-500 to-green-600"
     },
     {
-      icon: <Building2 className="w-8 h-8 text-cyan-500" />,
+      icon: <Building2 className="w-8 h-8 text-green-600" />,
       title: "دعم الفروع المتعددة",
       description: "إدارة جميع فروعك من حساب واحد موحد",
-      color: "from-cyan-500 to-cyan-600"
+      color: "from-green-500 to-green-600"
     },
     {
-      icon: <BarChart3 className="w-8 h-8 text-rose-500" />,
+      icon: <BarChart3 className="w-8 h-8 text-green-600" />,
       title: "تقارير لحظية",
       description: "تقارير مبيعات وأرباح فورية ومفصلة",
-      color: "from-rose-500 to-rose-600"
+      color: "from-green-500 to-green-600"
     },
     {
-      icon: <Users className="w-8 h-8 text-amber-500" />,
+      icon: <Users className="w-8 h-8 text-green-600" />,
       title: "إدارة الموظفين",
       description: "تتبع ساعات العمل وأداء الموظفين",
-      color: "from-amber-500 to-amber-600"
+      color: "from-green-500 to-green-600"
     },
     {
-      icon: <Gift className="w-8 h-8 text-pink-500" />,
+      icon: <Gift className="w-8 h-8 text-green-600" />,
       title: "نظام ولاء العملاء",
       description: "نقاط مكافآت وتتبع تاريخ المشتريات",
-      color: "from-pink-500 to-pink-600"
+      color: "from-green-500 to-green-600"
     },
     {
-      icon: <Smartphone className="w-8 h-8 text-violet-500" />,
+      icon: <Smartphone className="w-8 h-8 text-green-600" />,
       title: "متوافق مع جميع الأجهزة",
       description: "يعمل على الجوال والتابلت وقارئ الباركود",
-      color: "from-violet-500 to-violet-600"
+      color: "from-green-500 to-green-600"
     }
   ];
 
   const services = [
     {
       title: "إعداد النظام بالكامل",
-      icon: <Zap className="w-6 h-6 text-blue-500" />
+      icon: <Zap className="w-6 h-6 text-green-600" />
     },
     {
       title: "رفع جميع المنتجات والأسعار",
-      icon: <Package className="w-6 h-6 text-green-500" />
+      icon: <Package className="w-6 h-6 text-green-600" />
     },
     {
       title: "ربط الأجهزة والطابعات",
-      icon: <Printer className="w-6 h-6 text-purple-500" />
+      icon: <Printer className="w-6 h-6 text-green-600" />
     },
     {
       title: "تدريب شامل للمستخدمين",
-      icon: <Users className="w-6 h-6 text-indigo-500" />
+      icon: <Users className="w-6 h-6 text-green-600" />
     },
     {
       title: "دعم فني مستمر",
-      icon: <Shield className="w-6 h-6 text-teal-500" />
+      icon: <Shield className="w-6 h-6 text-green-600" />
     }
   ];
 
@@ -138,16 +137,16 @@ const Index = () => {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-50" dir="rtl">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md border-b border-gray-100 text-gray-800 py-4 px-6 sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent">
             نظام نقاط البيع المتكامل
           </h1>
           <Button 
             onClick={() => window.open(whatsappUrl, '_blank')}
-            className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
             <MessageCircle className="w-4 h-4 ml-2" />
             تواصل معنا
@@ -156,22 +155,22 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-l from-blue-600 via-blue-700 to-purple-800 text-white py-24 px-6 overflow-hidden animate-gradient">
+      <section className="relative bg-gradient-to-l from-green-600 via-green-700 to-green-800 text-white py-24 px-6 overflow-hidden animate-gradient">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="absolute top-10 right-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-10 left-10 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl animate-float" style={{animationDelay: '3s'}}></div>
+        <div className="absolute bottom-10 left-10 w-96 h-96 bg-green-400/20 rounded-full blur-3xl animate-float" style={{animationDelay: '3s'}}></div>
         
         <div className="container mx-auto text-center relative z-10">
           <div className="animate-fade-in-up">
             <h2 className="text-6xl font-bold mb-6 leading-tight">
               حوّل عملك إلى نظام
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-purple-200 block mt-2">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-200 to-green-100 block mt-2">
                 احترافي متكامل
               </span>
             </h2>
           </div>
           <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            <p className="text-xl mb-10 text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl mb-10 text-green-100 max-w-3xl mx-auto leading-relaxed">
               نظام نقاط بيع شامل مصمم خصيصاً لاحتياجات المحلات والمطاعم والبزنسات الصغيرة في عُمان
             </p>
           </div>
@@ -179,7 +178,7 @@ const Index = () => {
             <Button 
               size="lg" 
               onClick={() => window.open(whatsappUrl, '_blank')}
-              className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white text-lg px-10 py-4 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 hover-lift"
+              className="bg-white text-green-700 hover:bg-green-50 text-lg px-10 py-4 shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-105 hover-lift"
             >
               <TrendingUp className="w-5 h-5 ml-2" />
               احصل على استشارة مجانية
@@ -198,10 +197,10 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-24 px-6 bg-gradient-to-b from-white to-slate-50">
+      <section id="features" className="py-24 px-6 bg-gradient-to-b from-white to-green-50">
         <div className="container mx-auto">
           <div className="text-center mb-20 animate-fade-in-up">
-            <h3 className="text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-6">
+            <h3 className="text-5xl font-bold bg-gradient-to-r from-gray-800 to-green-700 bg-clip-text text-transparent mb-6">
               ميزات تجعل عملك أكثر كفاءة
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">كل ما تحتاجه لإدارة عملك بنجاح في مكان واحد</p>
@@ -218,7 +217,7 @@ const Index = () => {
                   <div className="mb-6 flex justify-center transform group-hover:scale-110 transition-transform duration-300">
                     {feature.icon}
                   </div>
-                  <h4 className="text-lg font-bold mb-3 text-gray-800 group-hover:text-gray-900 transition-colors">
+                  <h4 className="text-lg font-bold mb-3 text-gray-800 group-hover:text-green-700 transition-colors">
                     {feature.title}
                   </h4>
                   <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
@@ -230,10 +229,10 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 px-6 bg-gradient-to-r from-blue-50 to-purple-50">
+      <section className="py-24 px-6 bg-gradient-to-r from-green-50 to-white">
         <div className="container mx-auto">
           <div className="text-center mb-20 animate-fade-in-up">
-            <h3 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
+            <h3 className="text-5xl font-bold bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent mb-6">
               ماذا نقدم لك؟
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">خدمة شاملة من البداية حتى النهاية بأعلى معايير الجودة</p>
@@ -242,10 +241,10 @@ const Index = () => {
             {services.map((service, index) => (
               <div 
                 key={index} 
-                className="flex items-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift border border-gray-100 animate-scale-in group"
+                className="flex items-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift border border-green-100 animate-scale-in group"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className="ml-6 p-3 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                <div className="ml-6 p-3 bg-gradient-to-br from-green-50 to-green-100 rounded-xl group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
                 <span className="text-lg text-gray-800 font-medium leading-relaxed">{service.title}</span>
@@ -258,7 +257,7 @@ const Index = () => {
       {/* Comparison Section */}
       <section className="py-24 px-6 bg-white">
         <div className="container mx-auto">
-          <h3 className="text-5xl font-bold text-center bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-20 animate-fade-in-up">
+          <h3 className="text-5xl font-bold text-center bg-gradient-to-r from-gray-800 to-green-700 bg-clip-text text-transparent mb-20 animate-fade-in-up">
             الفرق واضح
           </h3>
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -285,7 +284,7 @@ const Index = () => {
                 </ul>
               </CardContent>
             </Card>
-            <Card className="bg-gradient-to-br from-green-50 to-blue-50 border-green-200 hover:shadow-2xl transition-all duration-300 hover-lift animate-scale-in" style={{animationDelay: '0.2s'}}>
+            <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200 hover:shadow-2xl transition-all duration-300 hover-lift animate-scale-in" style={{animationDelay: '0.2s'}}>
               <CardContent className="p-10">
                 <h4 className="text-3xl font-bold text-green-700 mb-8 text-center">مع النظام المتكامل</h4>
                 <ul className="space-y-4">
@@ -316,7 +315,7 @@ const Index = () => {
       <section className="py-24 px-6 bg-gradient-to-b from-slate-50 to-white">
         <div className="container mx-auto">
           <div className="text-center mb-20 animate-fade-in-up">
-            <h3 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
+            <h3 className="text-5xl font-bold bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent mb-6">
               ماذا يقول عملاؤنا؟
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">تجارب حقيقية من عملاء راضين عن خدماتنا</p>
@@ -328,7 +327,7 @@ const Index = () => {
                 className="bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-300 hover-lift animate-scale-in overflow-hidden relative group"
                 style={{animationDelay: `${index * 0.1}s`}}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <CardContent className="p-8 relative z-10">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -351,10 +350,10 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 px-6 bg-gradient-to-r from-blue-50 to-purple-50">
+      <section className="py-24 px-6 bg-gradient-to-r from-green-50 to-white">
         <div className="container mx-auto">
           <div className="text-center mb-20 animate-fade-in-up">
-            <h3 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
+            <h3 className="text-5xl font-bold bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent mb-6">
               الأسئلة الشائعة
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">إجابات شاملة على أهم استفساراتك</p>
@@ -367,7 +366,7 @@ const Index = () => {
                 style={{animationDelay: `${index * 0.1}s`}}
               >
                 <CardContent className="p-8">
-                  <h4 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4 leading-relaxed">
+                  <h4 className="text-xl font-bold bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent mb-4 leading-relaxed">
                     {faq.question}
                   </h4>
                   <p className="text-gray-700 text-lg leading-relaxed">{faq.answer}</p>
@@ -379,17 +378,17 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-6 bg-gradient-to-l from-blue-600 via-blue-700 to-purple-800 text-white relative overflow-hidden animate-gradient">
+      <section className="py-24 px-6 bg-gradient-to-l from-green-600 via-green-700 to-green-800 text-white relative overflow-hidden animate-gradient">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-purple-400/20 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-green-400/20 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
         
         <div className="container mx-auto text-center relative z-10">
           <div className="animate-fade-in-up">
             <h3 className="text-5xl font-bold mb-8">جاهز لتطوير عملك؟</h3>
           </div>
           <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            <p className="text-xl mb-10 text-blue-100 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl mb-10 text-green-100 max-w-2xl mx-auto leading-relaxed">
               تواصل معنا الآن واحصل على استشارة مجانية لتحديد أفضل حل لعملك
             </p>
           </div>
@@ -404,7 +403,7 @@ const Index = () => {
             </Button>
           </div>
           <div className="animate-fade-in-up mt-6" style={{animationDelay: '0.6s'}}>
-            <p className="text-blue-200 text-lg">
+            <p className="text-green-200 text-lg">
               أو اتصل بنا على: <span className="font-bold text-white">{whatsappNumber}</span>
             </p>
           </div>
@@ -412,10 +411,10 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-12 px-6">
+      <footer className="bg-gradient-to-r from-gray-800 to-green-900 text-white py-12 px-6">
         <div className="container mx-auto text-center">
           <div className="animate-fade-in-up">
-            <p className="text-2xl mb-4 font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <p className="text-2xl mb-4 font-bold bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent">
               نظام نقاط البيع المتكامل
             </p>
             <p className="text-gray-300 text-lg">حلول تقنية احترافية للبزنسات الصغيرة والمتوسطة في عُمان</p>
