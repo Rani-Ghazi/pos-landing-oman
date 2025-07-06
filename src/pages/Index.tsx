@@ -1,5 +1,4 @@
-
-import { MessageCircle, Shield, FileText, Percent, Printer, Package, Building2, BarChart3, Users, Gift, Smartphone, CheckCircle, ArrowRight, Star, Zap, TrendingUp, Play, Clock, HeadphonesIcon, Award } from "lucide-react";
+import { MessageCircle, Shield, FileText, Percent, Printer, Package, Building2, BarChart3, Users, Gift, Smartphone, CheckCircle, ArrowRight, Star, Zap, TrendingUp, Play, Clock, HeadphonesIcon, Award, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -12,7 +11,7 @@ const Index = () => {
     },
     {
       icon: <FileText className="w-6 h-6 text-green-600" />,
-      title: "فواتير إلكترونية وورقية",
+      title: "فواتير إلكترونية وورقية", 
       description: "إصدار فواتير متوافقة مع معايير الضريبة العُمانية والتشريعات المحلية"
     },
     {
@@ -59,7 +58,7 @@ const Index = () => {
       business: "بقالة النور - صحار",
       text: "إدارة المخزون أصبحت سهلة جداً، والتنبيهات تساعدني في طلب البضائع في الوقت المناسب. وفرت عليّ ساعات يومياً.",
       rating: 5,
-      avatar: "👩‍💼",
+      avatar: "👩‍💼", 
       highlight: "توفير ساعات يومياً"
     },
     {
