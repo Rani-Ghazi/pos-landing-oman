@@ -1,4 +1,3 @@
-
 import { MessageCircle, Shield, FileText, Percent, Printer, Package, Building2, BarChart3, Users, Gift, Smartphone, CheckCircle, ArrowRight, Star, Zap, TrendingUp, Play, Clock, HeadphonesIcon, Award, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -48,27 +47,39 @@ const Index = () => {
   const testimonials = [
     {
       name: "أحمد المعمري",
-      business: "مطعم الأصالة - مسقط",
       text: "النظام غيّر طريقة عملنا بالكامل! زادت سرعة الخدمة 50% والتقارير اليومية أصبحت واضحة ودقيقة.",
       rating: 5,
-      avatar: "🧑‍💼",
       highlight: "زيادة 50% في السرعة"
     },
     {
       name: "فاطمة الريامية",
-      business: "بقالة النور - صحار",
       text: "إدارة المخزون أصبحت سهلة جداً، والتنبيهات تساعدني في طلب البضائع في الوقت المناسب. وفرت عليّ ساعات يومياً.",
       rating: 5,
-      avatar: "👩‍💼", 
       highlight: "توفير ساعات يومياً"
     },
     {
       name: "سالم البوسعيدي",
-      business: "مجمع التسوق الجديد - نزوى",
       text: "ربط 5 فروع في نظام واحد كان حلماً، والآن أتابع جميع فروعي من هاتفي في أي مكان!",
       rating: 5,
-      avatar: "👨‍💼",
       highlight: "5 فروع في نظام واحد"
+    },
+    {
+      name: "محمد الهنائي",
+      text: "النظام ساعدني أضبط حساباتي وأعرف أرباحي الحقيقية. التقارير المفصلة غيرت نظرتي للبيزنس.",
+      rating: 5,
+      highlight: "تحكم كامل في الأرباح"
+    },
+    {
+      name: "عائشة الغافرية",
+      text: "الفواتير الإلكترونية والربط مع الضرائب وفر عليّ وقت كثير. كل شيء أصبح منظم ومرتب.",
+      rating: 5,
+      highlight: "توفير الوقت والتنظيم"
+    },
+    {
+      name: "خالد الرواحي",
+      text: "الدعم الفني ممتاز! أي مشكلة تحل بسرعة والفريق متعاون جداً. أنصح أي صاحب بيزنس يجربه.",
+      rating: 5,
+      highlight: "دعم فني ممتاز"
     }
   ];
 
@@ -325,7 +336,7 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-white border border-gray-100 rounded-3xl hover:shadow-2xl hover:border-green-200 transition-all duration-500 animate-fade-in-up group hover:-translate-y-2" style={{ animationDelay: `${index * 0.2}s` }}>
+              <Card key={index} className="bg-white border border-gray-100 rounded-3xl hover:shadow-2xl hover:border-green-200 transition-all duration-500 animate-fade-in-up group hover:-translate-y-2" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardContent className="p-8 sm:p-10">
                   <div className="flex mb-6">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -337,10 +348,12 @@ const Index = () => {
                   </div>
                   <p className="text-gray-700 mb-8 italic leading-relaxed text-base sm:text-lg font-medium">"{testimonial.text}"</p>
                   <div className="flex items-center">
-                    <div className="text-3xl ml-5">{testimonial.avatar}</div>
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg ml-4">
+                      {testimonial.name.charAt(0)}
+                    </div>
                     <div>
                       <h5 className="font-bold text-gray-900 text-lg">{testimonial.name}</h5>
-                      <p className="text-sm text-gray-600 font-medium">{testimonial.business}</p>
+                      <p className="text-sm text-gray-600 font-medium">عميل راضي</p>
                     </div>
                   </div>
                 </CardContent>
@@ -359,7 +372,7 @@ const Index = () => {
           <p className="text-xl sm:text-2xl text-green-100 mb-12 leading-relaxed max-w-4xl mx-auto font-medium">
             تواصل معنا الآن واحصل على استشارة مجانية وعرض سعر مخصص لعملك. فريقنا جاهز لمساعدتك في أي وقت.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex justify-center">
             <Button 
               size="lg" 
               onClick={() => window.open(whatsappUrl, '_blank')}
@@ -368,18 +381,7 @@ const Index = () => {
               <MessageCircle className="w-7 h-7 ml-4" />
               تواصل على الواتساب
             </Button>
-            <Button 
-              size="lg"
-              variant="outline"
-              className="border-3 border-white text-white hover:bg-white hover:text-green-600 px-16 py-6 text-xl rounded-2xl font-bold transition-all duration-300 w-full sm:w-auto hover:scale-105 active:scale-95 group"
-            >
-              <Phone className="w-7 h-7 ml-4" />
-              اتصل بنا الآن
-            </Button>
           </div>
-          <p className="text-green-200 mt-8 text-lg sm:text-xl font-medium">
-            أو اتصل بنا على: <span className="font-bold text-white">{whatsappNumber}</span>
-          </p>
         </div>
         
         {/* Enhanced Background decoration */}
@@ -409,7 +411,7 @@ const Index = () => {
           
           <div className="border-t border-gray-800 pt-10">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
-              <p className="text-gray-500 text-sm font-medium">© 2024 جميع الحقوق محفوظة - نظام نقاط البيع المتكامل</p>
+              <p className="text-gray-500 text-sm font-medium">© 2025 جميع الحقوق محفوظة - نظام نقاط البيع المتكامل</p>
               <div className="flex gap-6 text-sm">
                 <span className="text-gray-500 font-medium">صنع بـ ❤️ في عُمان</span>
               </div>
