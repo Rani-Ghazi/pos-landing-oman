@@ -1,12 +1,11 @@
-
-import { MessageCircle, Shield, FileText, Percent, Printer, Package, Building2, BarChart3, Users, Gift, Smartphone, CheckCircle, ArrowRight, Star, Zap, TrendingUp, Play, Clock, HeadphonesIcon, Award } from "lucide-react";
+import { MessageCircle, Shield, FileText, Percent, Printer, Package, Building2, BarChart3, Users, Gift, Smartphone, CheckCircle, ArrowRight, Star, Zap, TrendingUp, Play, Clock, HeadphonesIcon, Award, Store, Coffee, Truck, Shirt, Scissors } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-// Custom WhatsApp SVG Component
+// Custom WhatsApp SVG Component from Flaticon
 const WhatsAppIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.516"/>
+    <path d="M20.52 3.449C18.24.85 15.033-.3 11.704-.3 5.32-.3.16 4.88.157 11.293c0 2.052.528 4.055 1.533 5.826l-1.63 5.945 6.087-1.596c1.706.936 3.622 1.43 5.583 1.43h.005c6.378 0 11.54-5.178 11.54-11.545 0-3.087-1.2-5.992-3.378-8.204zM11.704 20.9c-1.746 0-3.455-.47-4.952-1.354l-.355-.21-3.676.964 1.007-3.676-.23-.37c-.97-1.54-1.482-3.32-1.482-5.14 0-5.338 4.347-9.69 9.69-9.69 2.587 0 5.02 1.007 6.854 2.84 1.835 1.835 2.842 4.267 2.842 6.856-.003 5.34-4.35 9.69-9.698 9.69zm5.32-7.26c-.292-.146-1.725-.85-1.993-.948-.267-.098-.462-.146-.656.146-.194.292-.752.948-.922 1.144-.17.195-.34.22-.632.073-.292-.146-1.23-.453-2.342-1.446-.865-.773-1.45-1.728-1.62-2.02-.17-.292-.018-.45.128-.595.13-.13.292-.34.438-.51.146-.17.195-.292.292-.487.098-.194.05-.364-.024-.51-.073-.146-.656-1.58-.9-2.165-.238-.57-.48-.493-.656-.502-.17-.008-.364-.01-.558-.01-.194 0-.51.073-.777.365-.267.292-1.02.996-1.02 2.43 0 1.434 1.044 2.82 1.19 3.016.146.194 2.054 3.135 4.976 4.398.696.3 1.238.48 1.66.615.7.222 1.336.19 1.84.115.56-.083 1.725-.705 1.968-1.384.243-.68.243-1.264.17-1.384-.073-.12-.267-.194-.56-.34z"/>
   </svg>
 );
 
@@ -41,6 +40,34 @@ const Index = () => {
       icon: <Building2 className="w-6 h-6 text-green-600" />,
       title: "دعم الفروع المتعددة",
       description: "إدارة جميع فروعك من حساب واحد مع مزامنة فورية للبيانات"
+    }
+  ];
+
+  const targetAudiences = [
+    {
+      icon: <Store className="w-6 h-6 text-green-600" />,
+      title: "أصحاب المحلات الصغيرة",
+      description: "مثل محلات العطور، البقالة، الإلكترونيات، الإكسسوارات، وكل من يدير نقطة بيع واحدة أو أكثر."
+    },
+    {
+      icon: <Coffee className="w-6 h-6 text-blue-600" />,
+      title: "المقاهي والمطاعم",
+      description: "نظام مرن يدعم الطلبات السريعة، الطاولات، الفواتير المنفصلة، وتتبّع المبيعات اليومية."
+    },
+    {
+      icon: <Truck className="w-6 h-6 text-purple-600" />,
+      title: "الأنشطة المتنقلة والبازارات",
+      description: "تقدر تبيع وتتابع المخزون والمبيعات من أي مكان عبر الجوال أو التابلت."
+    },
+    {
+      icon: <Shirt className="w-6 h-6 text-pink-600" />,
+      title: "محلات الملابس والأحذية",
+      description: "تتبّع المقاسات والألوان، الجرد السريع، وتسجيل المبيعات بنقرة وحدة."
+    },
+    {
+      icon: <Scissors className="w-6 h-6 text-orange-600" />,
+      title: "الأنشطة الخدمية",
+      description: "مثل الصالونات، المغاسل، المكاتب، أي نشاط يحتاج فواتير وتنظيم مدفوعات."
     }
   ];
 
@@ -283,8 +310,51 @@ const Index = () => {
         </div>
       </section>
 
+      {/* New Target Audience Section */}
+      <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 bg-gradient-to-br from-gray-50 via-green-50/20 to-blue-50/20">
+        <div className="container mx-auto max-w-7xl">
+          <div className="text-center mb-12 sm:mb-16 md:mb-20">
+            <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-green-100 to-green-50 text-green-800 px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-semibold mb-6 sm:mb-8 border border-green-200/50 hover:scale-110 transition-all duration-500">
+              <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 animate-bounce" />
+              مناسب لجميع الأعمال
+            </div>
+            <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6 md:mb-8">
+              مناسب لـ
+            </h3>
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
+              عشان الزائر يلقى نفسه بسرعة - نظامنا مصمم خصيصاً لهذه الأنشطة التجارية
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+            {targetAudiences.map((audience, index) => (
+              <Card 
+                key={index} 
+                className="bg-white border border-gray-100 hover:border-green-200 hover:shadow-2xl transition-all duration-700 rounded-2xl sm:rounded-3xl group hover:-translate-y-6 animate-fade-in-up overflow-hidden hover:scale-105"
+                style={{ animationDelay: `${index * 0.15}s` }}
+              >
+                <CardContent className="p-6 sm:p-8 md:p-10">
+                  <div className="mb-4 sm:mb-6 md:mb-8 p-3 sm:p-4 md:p-5 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl sm:rounded-2xl w-fit group-hover:scale-125 group-hover:rotate-6 transition-all duration-500">
+                    {audience.icon}
+                  </div>
+                  <div className="flex items-start gap-3 mb-3 sm:mb-4 md:mb-6">
+                    <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                    <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 group-hover:text-green-600 transition-colors duration-300">
+                      {audience.title}
+                    </h4>
+                  </div>
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg font-medium mr-8">
+                    {audience.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Enhanced Services Section */}
-      <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 bg-gradient-to-br from-gray-50 via-green-50/40 to-blue-50/30">
+      <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 bg-white">
         <div className="container mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center">
             <div className="order-2 lg:order-1">
@@ -369,7 +439,7 @@ const Index = () => {
       </section>
 
       {/* Enhanced Testimonials */}
-      <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 bg-white">
+      <section className="py-16 sm:py-20 md:py-28 px-4 sm:px-6 bg-gradient-to-br from-gray-50 via-green-50/40 to-blue-50/30">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12 sm:mb-16 md:mb-20">
             <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6 md:mb-8">
