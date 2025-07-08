@@ -1,4 +1,3 @@
-
 import { MessageCircle, Shield, FileText, Percent, Printer, Package, Building2, BarChart3, Users, Gift, Smartphone, CheckCircle, ArrowRight, Star, Zap, TrendingUp, Play, Clock, HeadphonesIcon, Award, Store, Coffee, Truck, Shirt, Scissors } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -46,34 +45,44 @@ const Index = () => {
 
   const targetAudiences = [
     {
-      icon: <Store className="w-8 h-8 text-green-600" />,
+      icon: <Store className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "أصحاب المحلات الصغيرة",
       description: "محلات العطور، البقالة، الإلكترونيات، الإكسسوارات، وكل من يدير نقطة بيع واحدة أو أكثر",
-      gradient: "from-green-500 to-green-600"
+      bgColor: "bg-blue-50 hover:bg-blue-100",
+      iconColor: "text-blue-700",
+      borderColor: "border-blue-200 hover:border-blue-300"
     },
     {
-      icon: <Coffee className="w-8 h-8 text-blue-600" />,
+      icon: <Coffee className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "المقاهي والمطاعم",
       description: "نظام مرن يدعم الطلبات السريعة، الطاولات، الفواتير المنفصلة، وتتبّع المبيعات اليومية",
-      gradient: "from-blue-500 to-blue-600"
+      bgColor: "bg-amber-50 hover:bg-amber-100",
+      iconColor: "text-amber-700",
+      borderColor: "border-amber-200 hover:border-amber-300"
     },
     {
-      icon: <Truck className="w-8 h-8 text-purple-600" />,
+      icon: <Truck className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "الأنشطة المتنقلة والبازارات",
       description: "بيع ومتابعة المخزون والمبيعات من أي مكان عبر الجوال أو التابلت",
-      gradient: "from-purple-500 to-purple-600"
+      bgColor: "bg-purple-50 hover:bg-purple-100",
+      iconColor: "text-purple-700",
+      borderColor: "border-purple-200 hover:border-purple-300"
     },
     {
-      icon: <Shirt className="w-8 h-8 text-pink-600" />,
+      icon: <Shirt className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "محلات الملابس والأحذية",
       description: "تتبّع المقاسات والألوان، الجرد السريع، وتسجيل المبيعات بنقرة واحدة",
-      gradient: "from-pink-500 to-pink-600"
+      bgColor: "bg-pink-50 hover:bg-pink-100",
+      iconColor: "text-pink-700",
+      borderColor: "border-pink-200 hover:border-pink-300"
     },
     {
-      icon: <Scissors className="w-8 h-8 text-orange-600" />,
+      icon: <Scissors className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "الأنشطة الخدمية",
       description: "الصالونات، المغاسل، المكاتب، أي نشاط يحتاج فواتير وتنظيم مدفوعات",
-      gradient: "from-orange-500 to-orange-600"
+      bgColor: "bg-green-50 hover:bg-green-100",
+      iconColor: "text-green-700",
+      borderColor: "border-green-200 hover:border-green-300"
     }
   ];
 
@@ -319,45 +328,44 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Enhanced Target Audience Section */}
-      <section className="py-20 sm:py-24 md:py-32 px-4 sm:px-6 bg-gradient-to-br from-gray-50 via-green-50/20 to-blue-50/20">
+      {/* Enhanced Target Audience Section - Fixed Contrast */}
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 bg-gradient-to-br from-gray-50 via-white to-blue-50/30">
         <div className="container mx-auto max-w-7xl">
-          <div className="text-center mb-16 sm:mb-20 md:mb-24">
-            <div className="inline-flex items-center gap-3 sm:gap-4 bg-gradient-to-r from-green-100 to-green-50 text-green-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base font-bold mb-10 sm:mb-12 border border-green-200/50 hover:scale-110 transition-all duration-500 shadow-lg">
-              <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 animate-pulse" />
+          <div className="text-center mb-12 sm:mb-16 md:mb-20">
+            <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-green-100 to-green-50 text-green-800 px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-semibold mb-6 sm:mb-8 border border-green-200/50 hover:scale-105 transition-all duration-500 shadow-sm">
+              <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 animate-pulse" />
               مناسب لجميع الأعمال
             </div>
-            <h3 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-8 sm:mb-10 md:mb-12 leading-tight">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4 sm:mb-6 md:mb-8 leading-tight">
               نظامنا يناسب
             </h3>
-            <p className="text-2xl sm:text-3xl md:text-4xl text-gray-600 max-w-6xl mx-auto leading-relaxed font-medium">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
               مصمم خصيصاً لهذه الأنشطة التجارية المتنوعة
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 md:gap-14">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
             {targetAudiences.map((audience, index) => (
               <Card 
                 key={index} 
-                className="bg-white/90 backdrop-blur-sm border-0 shadow-3xl hover:shadow-4xl transition-all duration-700 rounded-[2rem] sm:rounded-[3rem] group hover:-translate-y-10 animate-fade-in-up overflow-hidden hover:scale-105 relative"
+                className={`${audience.bgColor} ${audience.borderColor} border-2 shadow-lg hover:shadow-2xl transition-all duration-700 rounded-2xl sm:rounded-3xl group hover:-translate-y-4 animate-fade-in-up overflow-hidden hover:scale-105 relative`}
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
-                <div className={`absolute inset-0 bg-gradient-to-r ${audience.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-                <CardContent className="p-10 sm:p-12 md:p-14 relative z-10">
-                  <div className="mb-8 sm:mb-10 md:mb-12">
-                    <div className={`w-24 h-24 sm:w-28 sm:h-28 bg-gradient-to-r ${audience.gradient} rounded-3xl sm:rounded-[2rem] flex items-center justify-center shadow-2xl group-hover:shadow-3xl group-hover:scale-125 group-hover:rotate-6 transition-all duration-500 mx-auto mb-8 sm:mb-10`}>
-                      <div className="text-white">
+                <CardContent className="p-6 sm:p-8 md:p-10 relative z-10">
+                  <div className="mb-6 sm:mb-8">
+                    <div className={`w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-white rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 mx-auto mb-6 sm:mb-8 border-2 ${audience.borderColor}`}>
+                      <div className={audience.iconColor}>
                         {audience.icon}
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-start gap-5 sm:gap-6 mb-8 sm:mb-10">
-                    <CheckCircle className="w-7 h-7 sm:w-8 sm:h-8 text-green-500 mt-1 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
-                    <h4 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-gray-900 group-hover:to-gray-700 group-hover:bg-clip-text transition-all duration-300 leading-tight">
+                  <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+                    <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 mt-1 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" />
+                    <h4 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 leading-tight">
                       {audience.title}
                     </h4>
                   </div>
-                  <p className="text-gray-600 leading-relaxed text-lg sm:text-xl md:text-2xl font-medium mr-12 sm:mr-14 group-hover:text-gray-700 transition-colors duration-300">
+                  <p className="text-gray-700 leading-relaxed text-base sm:text-lg md:text-xl font-medium mr-8 sm:mr-10 group-hover:text-gray-800 transition-colors duration-300">
                     {audience.description}
                   </p>
                 </CardContent>
@@ -365,13 +373,13 @@ const Index = () => {
             ))}
           </div>
           
-          <div className="text-center mt-20 sm:mt-24 md:mt-28">
+          <div className="text-center mt-12 sm:mt-16 md:mt-20">
             <Button 
               size="lg" 
               onClick={() => window.open(whatsappUrl, '_blank')}
-              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-12 sm:px-16 py-6 sm:py-7 text-xl sm:text-2xl rounded-3xl sm:rounded-[2rem] shadow-3xl hover:shadow-4xl transition-all duration-500 w-full sm:w-auto max-w-md sm:max-w-none hover:scale-110 active:scale-95 group animate-pulse-glow font-bold"
+              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl rounded-2xl sm:rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 w-full sm:w-auto max-w-md sm:max-w-none hover:scale-110 active:scale-95 group animate-pulse-glow font-bold"
             >
-              <WhatsAppIcon className="w-7 h-7 sm:w-8 sm:h-8 ml-4 sm:ml-5 transition-transform duration-500 group-hover:scale-125 group-hover:rotate-12" />
+              <WhatsAppIcon className="w-6 h-6 sm:w-7 sm:h-7 ml-3 sm:ml-4 transition-transform duration-500 group-hover:scale-125 group-hover:rotate-12" />
               اكتشف كيف يناسب نظامنا عملك
             </Button>
           </div>
