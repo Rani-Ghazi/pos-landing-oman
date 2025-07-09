@@ -1,5 +1,4 @@
-
-import { MessageCircle, Shield, FileText, Percent, Printer, Package, Building2, BarChart3, Users, Gift, Smartphone, CheckCircle, ArrowRight, Star, Zap, TrendingUp, Play, Clock, HeadphonesIcon, Award, Store, Coffee, Truck, Shirt, Scissors } from "lucide-react";
+import { MessageCircle, Shield, FileText, Percent, Printer, Package, Building2, BarChart3, Users, Gift, Smartphone, CheckCircle, ArrowRight, Star, Zap, TrendingUp, Clock, HeadphonesIcon, Award, Store, Coffee, Truck, Shirt, Scissors } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -49,41 +48,46 @@ const Index = () => {
       icon: <Store className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "أصحاب المحلات الصغيرة",
       description: "محلات العطور، البقالة، الإلكترونيات، الإكسسوارات، وكل من يدير نقطة بيع واحدة أو أكثر",
-      bgColor: "bg-blue-50 hover:bg-blue-100",
-      iconColor: "text-blue-700",
-      borderColor: "border-blue-300 hover:border-blue-400"
+      bgColor: "bg-white",
+      iconColor: "text-blue-600",
+      borderColor: "border-blue-200 hover:border-blue-400",
+      iconBg: "bg-blue-100"
     },
     {
       icon: <Coffee className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "المقاهي والمطاعم",
       description: "نظام مرن يدعم الطلبات السريعة، الطاولات، الفواتير المنفصلة، وتتبّع المبيعات اليومية",
-      bgColor: "bg-amber-50 hover:bg-amber-100",
-      iconColor: "text-amber-700",
-      borderColor: "border-amber-300 hover:border-amber-400"
+      bgColor: "bg-white",
+      iconColor: "text-amber-600",
+      borderColor: "border-amber-200 hover:border-amber-400",
+      iconBg: "bg-amber-100"
     },
     {
       icon: <Truck className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "الأنشطة المتنقلة والبازارات",
       description: "بيع ومتابعة المخزون والمبيعات من أي مكان عبر الجوال أو التابلت",
-      bgColor: "bg-purple-50 hover:bg-purple-100",
-      iconColor: "text-purple-700",
-      borderColor: "border-purple-300 hover:border-purple-400"
+      bgColor: "bg-white",
+      iconColor: "text-purple-600",
+      borderColor: "border-purple-200 hover:border-purple-400",
+      iconBg: "bg-purple-100"
     },
     {
       icon: <Shirt className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "محلات الملابس والأحذية",
       description: "تتبّع المقاسات والألوان، الجرد السريع، وتسجيل المبيعات بنقرة واحدة",
-      bgColor: "bg-pink-50 hover:bg-pink-100",
-      iconColor: "text-pink-700",
-      borderColor: "border-pink-300 hover:border-pink-400"
+      bgColor: "bg-white",
+      iconColor: "text-pink-600",
+      borderColor: "border-pink-200 hover:border-pink-400",
+      iconBg: "bg-pink-100"
     },
     {
       icon: <Scissors className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />,
       title: "الأنشطة الخدمية",
       description: "الصالونات، المغاسل، المكاتب، أي نشاط يحتاج فواتير وتنظيم مدفوعات",
-      bgColor: "bg-green-50 hover:bg-green-100",
-      iconColor: "text-green-700",
-      borderColor: "border-green-300 hover:border-green-400"
+      bgColor: "bg-white",
+      iconColor: "text-green-600",
+      borderColor: "border-green-200 hover:border-green-400",
+      iconBg: "bg-green-100"
     }
   ];
 
@@ -190,18 +194,18 @@ const Index = () => {
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-500 via-green-600 to-green-700 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
               <Package className="w-5 h-5 sm:w-7 sm:h-7 text-white transition-transform duration-300 group-hover:scale-110" />
             </div>
-            <div className="min-w-0">
-              <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text leading-tight truncate">
+            <div className="min-w-0 flex-1">
+              <h1 className="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-gray-900 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text leading-tight">
                 نظام نقاط البيع المتكامل
               </h1>
-              <p className="text-xs sm:text-sm text-green-600 font-medium hidden sm:block truncate">الحل الأمثل للمحلات والمطاعم</p>
+              <p className="text-xs sm:text-sm text-green-600 font-medium hidden sm:block">الحل الأمثل للمحلات والمطاعم</p>
             </div>
           </div>
           <Button 
             onClick={() => window.open(whatsappUrl, '_blank')}
-            className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-lg sm:rounded-xl px-2 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-3 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 active:scale-95 group text-xs sm:text-sm md:text-base min-h-[40px] sm:min-h-[44px]"
+            className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-lg sm:rounded-xl px-3 sm:px-4 md:px-6 py-2 sm:py-3 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-110 active:scale-95 group text-xs sm:text-sm md:text-base min-h-[40px] sm:min-h-[44px] flex items-center gap-1 sm:gap-2"
           >
-            <WhatsAppIcon className="w-4 h-4 ml-1 sm:ml-2 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12 flex-shrink-0" />
+            <WhatsAppIcon className="w-4 h-4 transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12 flex-shrink-0" />
             <span className="font-semibold whitespace-nowrap">
               <span className="hidden sm:inline">تواصل معنا</span>
               <span className="sm:hidden">واتساب</span>
@@ -210,8 +214,19 @@ const Index = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-50 via-green-50/40 to-blue-50/30 py-12 sm:py-16 md:py-20 lg:py-28 px-4 sm:px-6 overflow-hidden">
+      {/* Hero Section with Background Image */}
+      <section 
+        className="relative bg-gradient-to-br from-gray-50 via-green-50/40 to-blue-50/30 py-12 sm:py-16 md:py-20 lg:py-28 px-4 sm:px-6 overflow-hidden"
+        style={{
+          backgroundImage: `url('/lovable-uploads/c2793d33-bd23-45e1-9923-058f5b322efa.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-white/85"></div>
+        
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
             <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-green-100 to-green-50 text-green-800 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-semibold mb-6 sm:mb-8 md:mb-10 animate-fade-in border border-green-200/50 hover:scale-105 transition-all duration-500 shadow-sm">
@@ -229,22 +244,14 @@ const Index = () => {
               حل شامل مصمم خصيصاً لاحتياجات المحلات والمطاعم والبزنسات الصغيرة في عُمان. 
               نظام احترافي يعمل بدون إنترنت مع إدارة متكاملة لجميع عملياتك التجارية.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center items-stretch sm:items-center animate-fade-in-up px-4">
+            <div className="flex justify-center animate-fade-in-up px-4">
               <Button 
                 size="lg" 
                 onClick={() => window.open(whatsappUrl, '_blank')}
-                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-5 md:py-6 text-sm sm:text-base md:text-lg lg:text-xl rounded-xl sm:rounded-2xl md:rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 w-full sm:w-auto hover:scale-110 active:scale-95 group animate-pulse-glow font-bold min-h-[48px] sm:min-h-[52px] md:min-h-[56px]"
+                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 sm:px-8 md:px-12 py-4 sm:py-5 md:py-6 text-sm sm:text-base md:text-lg lg:text-xl rounded-xl sm:rounded-2xl md:rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 w-full sm:w-auto max-w-sm sm:max-w-none hover:scale-110 active:scale-95 group animate-pulse-glow font-bold min-h-[48px] sm:min-h-[52px] md:min-h-[56px] flex items-center justify-center gap-2 sm:gap-3"
               >
-                <span className="truncate">احصل على استشارة مجانية</span>
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2 sm:mr-3 group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-5 md:py-6 text-sm sm:text-base md:text-lg lg:text-xl rounded-xl sm:rounded-2xl md:rounded-3xl hover:shadow-xl transition-all duration-500 w-full sm:w-auto hover:scale-110 active:scale-95 group font-bold min-h-[48px] sm:min-h-[52px] md:min-h-[56px]"
-              >
-                <Play className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 ml-2 sm:ml-3 group-hover:scale-125 transition-transform duration-500 flex-shrink-0" />
-                <span className="truncate">شاهد العرض التوضيحي</span>
+                <span className="whitespace-nowrap overflow-hidden text-ellipsis">احصل على استشارة مجانية</span>
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
               </Button>
             </div>
           </div>
@@ -257,8 +264,8 @@ const Index = () => {
                   <div className="text-green-500 mb-3 sm:mb-4 md:mb-5 flex justify-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
                     {stat.icon}
                   </div>
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-gray-900 mb-1 sm:mb-2 md:mb-3 bg-gradient-to-br from-gray-900 to-gray-700 bg-clip-text group-hover:animate-pulse">{stat.number}</div>
-                  <div className="text-xs sm:text-sm md:text-base font-medium text-gray-600">{stat.label}</div>
+                  <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-gray-900 mb-1 sm:mb-2 md:mb-3 bg-gradient-to-br from-gray-900 to-gray-700 bg-clip-text group-hover:animate-pulse leading-tight">{stat.number}</div>
+                  <div className="text-xs sm:text-sm md:text-base font-medium text-gray-600 leading-tight">{stat.label}</div>
                 </CardContent>
               </Card>
             ))}
@@ -282,8 +289,8 @@ const Index = () => {
                   <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-40 lg:h-40 bg-gradient-to-br from-green-500 via-green-600 to-green-700 rounded-2xl sm:rounded-3xl md:rounded-[2rem] flex items-center justify-center mx-auto mb-4 sm:mb-6 md:mb-8 lg:mb-10 shadow-3xl animate-float hover:scale-125 transition-transform duration-700 group-hover:rotate-6">
                     <BarChart3 className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 text-white animate-pulse" />
                   </div>
-                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-black text-gray-900 mb-2 sm:mb-4 md:mb-6 lg:mb-8">لوحة التحكم الرئيسية</h3>
-                  <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium px-4">إدارة شاملة لجميع عمليات البيع والمخزون والتقارير</p>
+                  <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-black text-gray-900 mb-2 sm:mb-4 md:mb-6 lg:mb-8 leading-tight">لوحة التحكم الرئيسية</h3>
+                  <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium px-4 leading-relaxed">إدارة شاملة لجميع عمليات البيع والمخزون والتقارير</p>
                 </div>
               </div>
             </div>
@@ -300,7 +307,7 @@ const Index = () => {
       <section className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 bg-white">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-gray-900 mb-4 sm:mb-6 md:mb-8 lg:mb-10 px-4">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-gray-900 mb-4 sm:mb-6 md:mb-8 lg:mb-10 px-4 leading-tight">
               كل ما تحتاجه في مكان واحد
             </h3>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-600 max-w-5xl mx-auto leading-relaxed font-medium px-4">
@@ -356,7 +363,7 @@ const Index = () => {
               >
                 <CardContent className="p-4 sm:p-6 md:p-8 lg:p-10 relative z-10">
                   <div className="mb-4 sm:mb-6 md:mb-8">
-                    <div className={`w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white rounded-xl sm:rounded-2xl md:rounded-3xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 mx-auto mb-4 sm:mb-6 md:mb-8 border-2 ${audience.borderColor}`}>
+                    <div className={`w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 ${audience.iconBg} rounded-xl sm:rounded-2xl md:rounded-3xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 mx-auto mb-4 sm:mb-6 md:mb-8 border-2 ${audience.borderColor}`}>
                       <div className={audience.iconColor}>
                         {audience.icon}
                       </div>
@@ -380,10 +387,10 @@ const Index = () => {
             <Button 
               size="lg" 
               onClick={() => window.open(whatsappUrl, '_blank')}
-              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-5 md:py-6 text-sm sm:text-base md:text-lg lg:text-xl rounded-xl sm:rounded-2xl md:rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 w-full sm:w-auto max-w-sm sm:max-w-md md:max-w-none hover:scale-110 active:scale-95 group animate-pulse-glow font-bold min-h-[48px] sm:min-h-[52px] md:min-h-[56px]"
+              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-5 md:py-6 text-sm sm:text-base md:text-lg lg:text-xl rounded-xl sm:rounded-2xl md:rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 w-full sm:w-auto max-w-sm sm:max-w-md md:max-w-none hover:scale-110 active:scale-95 group animate-pulse-glow font-bold min-h-[48px] sm:min-h-[52px] md:min-h-[56px] flex items-center justify-center gap-2 sm:gap-3 md:gap-4"
             >
-              <WhatsAppIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 ml-2 sm:ml-3 md:ml-4 transition-transform duration-500 group-hover:scale-125 group-hover:rotate-12 flex-shrink-0" />
-              <span className="truncate">اكتشف كيف يناسب نظامنا عملك</span>
+              <WhatsAppIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 transition-transform duration-500 group-hover:scale-125 group-hover:rotate-12 flex-shrink-0" />
+              <span className="whitespace-nowrap overflow-hidden text-ellipsis">اكتشف كيف يناسب نظامنا عملك</span>
             </Button>
           </div>
         </div>
@@ -421,10 +428,10 @@ const Index = () => {
               <Button 
                 size="lg" 
                 onClick={() => window.open(whatsappUrl, '_blank')}
-                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl lg:text-2xl rounded-xl sm:rounded-2xl md:rounded-3xl mt-8 sm:mt-10 md:mt-12 shadow-2xl hover:shadow-3xl transition-all duration-500 w-full sm:w-auto hover:scale-110 active:scale-95 group animate-pulse-glow font-bold min-h-[48px] sm:min-h-[52px] md:min-h-[56px]"
+                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-6 sm:px-8 md:px-10 lg:px-12 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl lg:text-2xl rounded-xl sm:rounded-2xl md:rounded-3xl mt-8 sm:mt-10 md:mt-12 shadow-2xl hover:shadow-3xl transition-all duration-500 w-full sm:w-auto hover:scale-110 active:scale-95 group animate-pulse-glow font-bold min-h-[48px] sm:min-h-[52px] md:min-h-[56px] flex items-center justify-center gap-2 sm:gap-3 md:gap-4"
               >
-                <span className="truncate">ابدأ الآن - مجاناً</span>
-                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 mr-2 sm:mr-3 md:mr-4 group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
+                <span className="whitespace-nowrap overflow-hidden text-ellipsis">ابدأ الآن - مجاناً</span>
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:translate-x-2 transition-transform duration-500 flex-shrink-0" />
               </Button>
             </div>
             
@@ -478,7 +485,7 @@ const Index = () => {
       <section className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 bg-gradient-to-br from-gray-50 via-green-50/40 to-blue-50/30">
         <div className="container mx-auto max-w-7xl">
           <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-gray-900 mb-4 sm:mb-6 md:mb-8 lg:mb-10 px-4">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-gray-900 mb-4 sm:mb-6 md:mb-8 lg:mb-10 px-4 leading-tight">
               ماذا يقول عملاؤنا؟
             </h3>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-gray-600 font-medium px-4">تجارب حقيقية من أصحاب أعمال نجحوا معنا</p>
@@ -516,7 +523,7 @@ const Index = () => {
       {/* Enhanced CTA Section */}
       <section className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 bg-gradient-to-br from-green-500 via-green-600 to-green-700 relative overflow-hidden">
         <div className="container mx-auto max-w-6xl text-center relative z-10">
-          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6 sm:mb-8 md:mb-10 animate-fade-in-up px-4">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-black text-white mb-6 sm:mb-8 md:mb-10 animate-fade-in-up px-4 leading-tight">
             جاهز لتطوير عملك؟
           </h3>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-green-100 mb-10 sm:mb-12 md:mb-16 leading-relaxed max-w-5xl mx-auto font-medium animate-fade-in-up px-4">
@@ -526,10 +533,10 @@ const Index = () => {
             <Button 
               size="lg" 
               onClick={() => window.open(whatsappUrl, '_blank')}
-              className="bg-white text-green-600 hover:bg-gray-50 px-8 sm:px-12 md:px-16 lg:px-20 py-5 sm:py-6 md:py-7 text-base sm:text-lg md:text-xl lg:text-2xl rounded-2xl sm:rounded-3xl md:rounded-[2rem] font-bold shadow-3xl hover:shadow-4xl transition-all duration-500 w-full sm:w-auto max-w-xs sm:max-w-sm md:max-w-none hover:scale-115 active:scale-95 group animate-pulse-glow min-h-[48px] sm:min-h-[52px] md:min-h-[56px]"
+              className="bg-white text-green-600 hover:bg-gray-50 px-8 sm:px-12 md:px-16 lg:px-20 py-5 sm:py-6 md:py-7 text-base sm:text-lg md:text-xl lg:text-2xl rounded-2xl sm:rounded-3xl md:rounded-[2rem] font-bold shadow-3xl hover:shadow-4xl transition-all duration-500 w-full sm:w-auto max-w-xs sm:max-w-sm md:max-w-none hover:scale-115 active:scale-95 group animate-pulse-glow min-h-[48px] sm:min-h-[52px] md:min-h-[56px] flex items-center justify-center gap-3 sm:gap-4 md:gap-5"
             >
-              <WhatsAppIcon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 ml-3 sm:ml-4 md:ml-5 transition-transform duration-500 group-hover:scale-125 group-hover:rotate-12 flex-shrink-0" />
-              <span className="truncate">تواصل على الواتساب</span>
+              <WhatsAppIcon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 transition-transform duration-500 group-hover:scale-125 group-hover:rotate-12 flex-shrink-0" />
+              <span className="whitespace-nowrap overflow-hidden text-ellipsis">تواصل على الواتساب</span>
             </Button>
           </div>
         </div>
