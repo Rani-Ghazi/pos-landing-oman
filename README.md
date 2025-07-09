@@ -4,13 +4,13 @@
 
 ## 📷 Project Screenshot
 
-![POS Manager Screenshot](pos.png)
+![POS Manager Screenshot](pos.PNG)
 
 ---
 
 ## 🌐 Live Demo
 
-**Explore it here**: [https://posmanager.netlify.app/](https://posmanager.netlify.app/)  
+**Explore it here**: [https://posmanager.netlify.app/](https://pos-oman.netlify.app/)  
 
 ---
 
