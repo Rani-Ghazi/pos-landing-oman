@@ -224,12 +224,12 @@ const Index = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-white/85"></div>
+        {/* Reduced Overlay for better text readability */}
+        <div className="absolute inset-0 bg-white/60"></div>
         
         <div className="container mx-auto max-w-7xl relative z-10">
           <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
-            <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-green-100 to-green-50 text-green-800 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-semibold mb-6 sm:mb-8 md:mb-10 animate-fade-in border border-green-200/50 hover:scale-105 transition-all duration-500 shadow-sm">
+            <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-green-100 to-green-50 text-green-800 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm md:text-base font-semibold mb-6 sm:mb-8 md:mb-10 animate-fade-in border border-green-200/50 hover:scale-110 transition-all duration-500 shadow-sm">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse flex-shrink-0"></div>
               <span className="whitespace-nowrap">الحل الشامل لإدارة الأعمال في عُمان</span>
               <Zap className="w-3 h-3 sm:w-4 sm:h-4 animate-bounce flex-shrink-0" />
@@ -293,14 +293,14 @@ const Index = () => {
                   backgroundRepeat: 'no-repeat'
                 }}
               >
-                {/* Overlay for better readability */}
-                <div className="absolute inset-0 bg-white/10 backdrop-blur-[2px]"></div>
+                {/* Reduced Overlay for better dashboard visibility */}
+                <div className="absolute inset-0 bg-white/5 backdrop-blur-[1px]"></div>
                 
                 <div className="text-center relative z-10">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-40 lg:h-40 bg-gradient-to-br from-green-500 via-green-600 to-green-700 rounded-2xl sm:rounded-3xl md:rounded-[2rem] flex items-center justify-center mx-auto mb-4 sm:mb-6 md:mb-8 lg:mb-10 shadow-3xl animate-float hover:scale-125 transition-transform duration-700 group-hover:rotate-6 bg-opacity-95 backdrop-blur-sm">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-40 lg:h-40 bg-gradient-to-br from-green-500 via-green-600 to-green-700 rounded-2xl sm:rounded-3xl md:rounded-[2rem] flex items-center justify-center mx-auto mb-4 sm:mb-6 md:mb-8 lg:mb-10 shadow-3xl animate-float hover:scale-125 transition-transform duration-700 group-hover:rotate-6 bg-opacity-90 backdrop-blur-sm">
                     <BarChart3 className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 lg:w-20 lg:h-20 text-white animate-pulse" />
                   </div>
-                  <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 shadow-2xl border border-white/20">
+                  <div className="bg-white/90 backdrop-blur-md rounded-2xl sm:rounded-3xl px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 shadow-2xl border border-white/30">
                     <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-black text-gray-900 mb-2 sm:mb-4 md:mb-6 lg:mb-8 leading-tight">لوحة التحكم الرئيسية</h3>
                     <p className="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium px-4 leading-relaxed">إدارة شاملة لجميع عمليات البيع والمخزون والتقارير</p>
                   </div>
