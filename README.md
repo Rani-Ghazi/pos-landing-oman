@@ -1,73 +1,37 @@
-# Welcome to your Lovable project
+## 📄 About the Project
 
-## Project info
+**POS System** is a streamlined point-of-sale and business management solution tailored for small businesses across the Gulf. It handles everything from sales and inventory to customer tracking and reporting — all from a clean, easy-to-use interface. Simple setup. No monthly fees. Full onboarding and support.
 
-**URL**: https://lovable.dev/projects/1cc4b30a-df31-4cb6-bb5e-4e6687ba2d5f
+## 📷 Project Screenshot
 
-## How can I edit this code?
+![POS Manager Screenshot](pos.png)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🌐 Live Demo
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1cc4b30a-df31-4cb6-bb5e-4e6687ba2d5f) and start prompting.
+**Explore it here**: [https://posmanager.netlify.app/](https://posmanager.netlify.app/)  
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## ✨ Key Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 🧾 Fast, reliable point-of-sale system  
+- 📦 Inventory and stock management  
+- 👥 Customer profiles with purchase history  
+- 📊 Real-time sales and performance reports  
+- 🔔 Low-stock alerts and multi-store support  
+- 🌐 Arabic-friendly interface with English support  
+- 💼 One-time setup with full customization & training  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Perfect for retail stores, cafes, barbershops, salons, and more — POS Manager helps business owners stay on top of operations with zero tech hassle.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🧰 Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1cc4b30a-df31-4cb6-bb5e-4e6687ba2d5f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- ⚛️ [React](https://reactjs.org/) — fast, interactive UI  
+- 💻 [TypeScript](https://www.typescriptlang.org/) — clean, scalable logic  
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) — modern styling system  
+- 🧩 [shadcn/ui](https://ui.shadcn.dev/) — accessible component set  
+- 🔧 Native integration with Android tablets and receipt printers  
